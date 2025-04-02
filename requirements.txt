@@ -1,6 +1,0 @@
-telebot
-pymongo
-aiohttp
-python-telegram-bot
-pyTelegramBotAPI
-certifi
