@@ -23,9 +23,9 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          sudo apt update -y && sudo apt install -y gcc screen 
+          apt update -y &&  apt install -y gcc screen 
           python -m pip install --upgrade pip
-          gcc -o ipx ipx.c -lpthread
+          gcc -o test test.c -lpthread
           pip install -r requirements.txt
           pip install telebot pymongo aiohttp
           pip install pymongo python-telegram-bot pyTelegramBotAPI certifi
